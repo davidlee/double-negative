@@ -1,3 +1,3 @@
-# photo-organiser
+# double_negative
 
 TODO: readme

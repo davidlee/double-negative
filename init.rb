@@ -5,4 +5,4 @@ Bundler.require
 require 'fileutils'
 require 'find'
 
-require './lib/pho'
+require './lib/double_negative'

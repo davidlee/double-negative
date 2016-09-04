@@ -1,6 +1,6 @@
 require 'active_support/core_ext/hash/keys'
 
-class Pho::MergePlan
+class DoubleNegative::MergePlan
 
   attr_reader :source_tree, :dest_path, :nodes, :create_dirs
 
@@ -17,8 +17,8 @@ class Pho::MergePlan
 
   def build
     @nodes = source_tree.filepaths.map do |path|
-      node = Pho::Filenode.new(source: path)
-      node.creation_time = Pho::Metadata.new(path).creation_time
+      node = DoubleNegative::Filenode.new(source: path)
+      node.creation_time = DoubleNegative::Metadata.new(path).creation_time
       node.destination = destination(node)
       node
     end

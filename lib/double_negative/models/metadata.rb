@@ -1,4 +1,4 @@
-class Pho::Metadata
+class DoubleNegative::Metadata
 
   MINI_EXIF_TOOL = MiniExiftool
 

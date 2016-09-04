@@ -2,7 +2,7 @@ require 'find'
 require 'pathname'
 require 'active_support/core_ext/module/delegation'
 
-class Pho::SourceFileTree
+class DoubleNegative::SourceFileTree
 
   attr_reader :root_path
 

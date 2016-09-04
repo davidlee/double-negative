@@ -1,14 +1,14 @@
 
 $LOAD_PATH.push File.expand_path("../lib", __FILE__)
-require 'pho/version'
+require 'double_negative/version'
 
 Gem::Specification.new do |s|
-  s.name              = "pho"
-  s.version           = Pho::VERSION.dup
+  s.name              = "double_negative"
+  s.version           = DoubleNegative::VERSION.dup
   s.platform          = Gem::Platform::RUBY
   s.author            = "David Lee"
   s.email             = "dav@davlee.com"
-  s.homepage          = "https://github.com/davidlee/pho"
+  s.homepage          = "https://github.com/davidlee/double-negative"
   s.summary           = "CLI utils for photography file management"
   s.description       = "CLI utils for photography file management"
   s.license           = "MIT"
