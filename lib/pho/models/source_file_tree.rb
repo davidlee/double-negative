@@ -33,33 +33,6 @@ class Pho::SourceFileTree
     SUPPORTED_EXTENSIONS.include?(File.extname(path).delete('.').downcase)
   end
 
-=begin
-  def convert_relative(abs_path)
-    path = File.realpath(abs_path)
-
-    if path == root_path
-      '.'
-    else
-      # TODO error handling
-      path.partition(root_path).last.gsub(/^\//,'')
-    end
-  end
-
-  def relative_filepaths
-    filepaths.map {|x| convert_relative(x) }
-  end
-
-  def subfolders
-    find do |path|
-      path != root_path && FileTest.directory?(path)
-    end
-  end
-
-  def relative_subfolders
-    subfolders.map {|x| convert_relative(x) }
-  end
-=end
-
   private
 
 end

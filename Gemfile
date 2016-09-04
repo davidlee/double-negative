@@ -2,9 +2,7 @@ ruby '2.3.1'
 
 source 'https://rubygems.org'
 
-#gem 'cocaine'
 #gem 'highline'
-#gem 'trollop'
 gem 'exifr'
 gem 'awesome_print'
 gem 'thor'
