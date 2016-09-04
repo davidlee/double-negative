@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require './init'
+
+require 'thor'
+
+class Pho::Runner < Thor
+  desc 'copy-merge photos into archival folder', 'copy-merge photos into archival folder'
+
+  def merge(source, dest)
+    merge = Pho::Merge.new(source, dest)
+    merge.plan.build
+    merge.plan.check
+
+    ap merge.plan.nodes
+
+    merge.plan.execute
+  end
+end
+
+
+Pho::Runner.start(ARGV)
